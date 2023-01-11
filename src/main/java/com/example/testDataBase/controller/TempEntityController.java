@@ -21,8 +21,8 @@ public class TempEntityController {
     @PostMapping("/addTemp")
     public ResponseEntity addTemp(@RequestBody TempEntity tempEntity) {
         try {
-            tempEntityService.addTempEntity(tempEntity);
-            return ResponseEntity.ok("Ok. recored saved"+testComponent1.employeeList.toString());
+           // tempEntityService.addTempEntity(tempEntity);
+            return ResponseEntity.ok(tempEntityService.addTempEntity(tempEntity));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Произошла ошибка сохранения!");
         }
