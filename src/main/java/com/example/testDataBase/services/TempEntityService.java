@@ -34,6 +34,7 @@ public class TempEntityService {
             myTemp.setNum(i);
             myTempList.add(myTemp);
         }
+
         tempListClass.setMyTempList(myTempList);
         tempEntity.setTempListClass(tempListClass);
         return tempEntityRepo.save(tempEntity);
