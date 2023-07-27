@@ -1,7 +1,5 @@
 package com.example.testDataBase.classes;
 
-import lombok.Data;
-
 import java.io.Serializable;
 import java.util.List;
 
